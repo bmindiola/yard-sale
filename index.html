@@ -9,7 +9,7 @@
 </head>
 <body>
   <nav>
-    <img src="./icons/icon_menu.svg" alt="menu" class="menu">
+    <img src="./icons/icon_menu.svg" alt="menu-mobile" class="icon-mobile">
 
     <div class="navbar-left">
       <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
@@ -46,19 +46,142 @@
       </ul>
     </div>
 
-    <div class="desktop-menu">
+    <div class="desktop-menu inactive">
         <ul>
             <li>
-                <a href="#" class="title">My orders</a>
+                <a href="#">My orders</a>
             </li>
             <li>
                 <a href="#">My account</a>
             </li>
             <li>
-                <a href="#" class="title">Sign Out</a>
+                <a href="#">Sign Out</a>
             </li>
         </ul>
     </div>
+
+    <div class="mobile-menu inactive">
+      <ul>
+          <li>
+              <a href="#">CATEGORIES</a>
+          </li>
+          <li>
+              <a href="#">All</a>
+          </li>
+          <li>
+              <a href="#">Clothes</a>
+          </li>
+          <li>
+              <a href="#">Electronics</a>
+          </li>
+          <li>
+              <a href="#">Furnitures</a>
+          </li>
+          <li>
+              <a href="#">Toys</a>
+          </li>
+          <li>
+              <a href="#">Others</a>
+          </li>
+      </ul>
+          
+      <ul>
+          <li>
+              <a href="#">My orders</a>
+          </li>
+          <li>
+              <a href="#">My account</a>
+          </li>
+      </ul>
+
+      <ul>
+          <li>
+              <a href="#" class="email-mobile">pepito.perez@example.com</a>
+          </li>
+          <li>
+              <a href="#" class="sign-out-mobile">Sign out</a>
+          </li>
+      </ul>
+  </div>
   </nav>
+
+  <aside class="shopping-container inactive">
+    <div class="title-container">
+        <img src="./icons/flechita.svg" alt="arrow">
+        <p class="title">Shopping cart</p>
+    </div>
+
+    <div class="my-order-container">
+        
+        <div class="my-order-content">
+
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://cdn.pixabay.com/photo/2015/05/29/19/18/bicycle-789648_960_720.jpg" alt="">
+                </figure>
+                <p>Bike</p>
+                <p>$30,00</p>
+                <img src="./icons/icon_close.png" alt="close">
+            </div>
+
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://cdn.pixabay.com/photo/2015/05/29/19/18/bicycle-789648_960_720.jpg" alt="">
+                </figure>
+                <p>Bike</p>
+                <p>$30,00</p>
+                <img src="./icons/icon_close.png" alt="close">
+            </div>
+
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://cdn.pixabay.com/photo/2015/05/29/19/18/bicycle-789648_960_720.jpg" alt="">
+                </figure>
+                <p>Bike</p>
+                <p>$30,00</p>
+                <img src="./icons/icon_close.png" alt="close">
+            </div>
+
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://cdn.pixabay.com/photo/2015/05/29/19/18/bicycle-789648_960_720.jpg" alt="">
+                </figure>
+                <p>Bike</p>
+                <p>$30,00</p>
+                <img src="./icons/icon_close.png" alt="close">
+            </div>
+
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://cdn.pixabay.com/photo/2015/05/29/19/18/bicycle-789648_960_720.jpg" alt="">
+                </figure>
+                <p>Bike</p>
+                <p>$30,00</p>
+                <img src="./icons/icon_close.png" alt="close">
+            </div>
+
+        </div>
+
+        <div class="order">
+            <p>
+                <span>Total</span> 
+            </p>
+            <p>
+                $ 560,00
+            </p>
+        </div>
+
+        <button class="primary-button">
+            Checkout
+        </button>
+    </div>
+  </aside>
+
+  <section class="products-container">
+    <div class="cards-container">
+
+    </div>
+  </section>
+  <script src="./javascript/main.js"></script>
 </body>
 </html>
