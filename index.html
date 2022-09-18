@@ -38,7 +38,7 @@
 
     <div class="navbar-right">
       <ul>
-        <li class="navbar-email">platzi@example.com</li>
+        <li class="navbar-email">pepito@example.com</li>
         <li class="navbar-shopping-cart">
           <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
           <div>2</div>
@@ -46,7 +46,7 @@
       </ul>
     </div>
 
-    <div class="desktop-menu inactive">
+    <div class="desktop-menu floating-box inactive">
         <ul>
             <li>
                 <a href="#">My orders</a>
@@ -60,7 +60,7 @@
         </ul>
     </div>
 
-    <div class="mobile-menu inactive">
+    <div class="mobile-menu floating-box inactive">
       <ul>
           <li>
               <a href="#">CATEGORIES</a>
@@ -102,10 +102,10 @@
               <a href="#" class="sign-out-mobile">Sign out</a>
           </li>
       </ul>
-  </div>
-  </nav>
+    </div>
+    </nav>
 
-  <aside class="shopping-container inactive">
+    <aside class="shopping-container floating-box inactive">
     <div class="title-container">
         <img src="./icons/flechita.svg" alt="arrow">
         <p class="title">Shopping cart</p>
@@ -175,9 +175,25 @@
             Checkout
         </button>
     </div>
-  </aside>
+    </aside>
 
-  <section class="products-container">
+    <aside class="product-detail floating-box inactive">
+        <div class="product-detail-close">
+            <img src="./icons/icon_close.png" alt="close">
+        </div>
+        <img src="https://cdn.pixabay.com/photo/2015/05/29/19/18/bicycle-789648_960_720.jpg" alt="bike">
+        <div class="product-info">
+            <p>$ 35,00</p>
+            <p>Bike</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea adipisci quos assumenda et officia quisquam porro ducimus quia vero. A cupiditate nulla eius quod tempore incidunt explicabo consequuntur provident impedit.</p>
+            <button class="primary-button add-to-cart">
+                <img src="./icons/bt_add_to_cart.svg" alt="Add to cart">
+                Add to cart
+            </button>
+        </div>
+    </aside>
+    
+    <section class="products-container">
     <div class="cards-container">
 
     </div>

@@ -6,6 +6,7 @@ navEmail.addEventListener('click', toggleDesktopMenu)
 
 function toggleDesktopMenu(){
     shoppingCart.classList.add('inactive')
+    productDetail.classList.add('inactive')
     desktopMenu.classList.toggle('inactive')
 }
 
@@ -18,6 +19,7 @@ burgerMenu.addEventListener('click', toggleMobileMenu)
 
 function toggleMobileMenu(){
     shoppingCart.classList.add('inactive')
+    productDetail.classList.add('inactive')
     mobileMenu.classList.toggle('inactive')
 }
 
@@ -30,8 +32,28 @@ iconCarrito.addEventListener('click', toggleShoppingCart)
 
 function toggleShoppingCart(){
     mobileMenu.classList.add('inactive')
+    productDetail.classList.add('inactive')
     desktopMenu.classList.add('inactive')
     shoppingCart.classList.toggle('inactive')
+}
+
+// Product detail
+
+// const addToCartIcon = document.querySelector('.navbar-shopping-cart')
+const productDetail = document.querySelector('.product-detail')
+const productDetailCloseIcon = document.querySelector('.product-detail-close')
+
+productDetailCloseIcon.addEventListener('click', productDetailClose)
+
+function openProductDetail(){
+    shoppingCart.classList.add('inactive')
+    mobileMenu.classList.add('inactive')
+    desktopMenu.classList.add('inactive')
+    productDetail.classList.remove('inactive')
+}
+
+function productDetailClose(){
+    productDetail.classList.add('inactive')
 }
 
 // Products
@@ -123,7 +145,8 @@ function renderProducts(arr){
     
         const productImg = document.createElement('img')
         productImg.setAttribute('src', product.image)
-    
+        productImg.addEventListener('click', openProductDetail)
+
         const productInfo = document.createElement('div')
         productInfo.classList.add('product-info')
     
