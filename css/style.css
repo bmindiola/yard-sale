@@ -16,7 +16,11 @@ body {
     display: none;
 }
 .floating-box{
-    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #C7C7C7;
+    border-radius: 4px;
+    border-top: solid 0px;
 }
 nav {
     display: flex;
@@ -172,7 +176,7 @@ nav {
 .shopping-container{
     width: 360px;
     background-color: var(--white);
-    padding: 0 20px;
+    padding: 20px;
     position: absolute;
     box-sizing: border-box;
     right: 0;
